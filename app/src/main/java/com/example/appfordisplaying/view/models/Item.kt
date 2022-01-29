@@ -1,0 +1,11 @@
+package com.example.appfordisplaying.view.models
+
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
+data class Item(
+    @Json(name = "id") val id: Int,
+    @Json(name = "url") val url: String,
+    @Json(name = "description") val description: String,
+)

@@ -6,14 +6,19 @@
 
 
     <TextView
-        android:layout_width="149dp"
-        android:layout_height="104dp"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:text="Hello World!" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.appfordisplaying.view.fragments.ListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 
 </LinearLayout>
