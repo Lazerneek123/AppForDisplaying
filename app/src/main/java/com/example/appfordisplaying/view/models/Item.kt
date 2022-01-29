@@ -7,5 +7,5 @@ import com.squareup.moshi.JsonClass
 data class Item(
     @Json(name = "id") val id: Int,
     @Json(name = "url") val url: String,
-    @Json(name = "description") val description: String,
+    @Json(name = "description") val description: String
 )
