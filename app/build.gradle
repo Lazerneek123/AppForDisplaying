@@ -42,12 +42,9 @@ android {
 }
 
 dependencies {
-    //Coroutines
-    /*implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"*/
-
-    //ConstraintLayout
-    //implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    //ViewModelScope and coroutines
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
 
     /////API
     def version_retrofit = '2.8.0'
@@ -58,6 +55,10 @@ dependencies {
     implementation "com.squareup.moshi:moshi-kotlin:$version_moshi"
     /////API
 
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    //Other
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
