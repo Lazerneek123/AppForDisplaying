@@ -49,7 +49,6 @@ class FragmentAdapter :
                     descriptionItem.text = "ERROR: " + item.title
                     descriptionItem.textSize = 15F
                     descriptionItem.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-                    progressBarImage.visibility = ProgressBar.GONE
                     imageItem.visibility = ImageView.GONE
                 } else {
                     val url = GlideUrl(
@@ -64,7 +63,6 @@ class FragmentAdapter :
                         .into(imageItem)
 
                     descriptionItem.text = item.title
-                    progressBarImage.visibility = ProgressBar.GONE
                     imageItem.visibility = ImageView.VISIBLE
                 }
             }
